@@ -1,2 +1,2 @@
-# apiNode
-API REST Node de Notícias 
+# 📚 API REST NODE DE NOTÍCIAS
+DOCUMENTAÇÃO
