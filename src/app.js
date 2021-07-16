@@ -2,6 +2,7 @@ const app = require('./parser/index');
 const db = require('./database/mongo'); // database configuration
 const swaggerDocs = require('./tools/swaggerDocs'); // swagger configuration
 const config = require('./settings/enviroment');
+const newsRouter = require('./routes/newsRoute');
 
 // connection to mongodb
 db.connection.on('error', (err) => {
@@ -17,5 +18,9 @@ db.connection.on('connected', () => {
 });
 
 swaggerDocs(app); // documentation swagger
+
+// api routes
+app.use('/', newsRouter);
+app.use('/news', newsRouter);
 
 module.exports = app;
