@@ -1,5 +1,6 @@
 const app = require('./parser/index');
 const db = require('./database/mongo'); // database configuration
+const swaggerDocs = require('./tools/swaggerDocs'); // swagger configuration
 const config = require('./settings/enviroment');
 
 // connection to mongodb
@@ -15,5 +16,6 @@ db.connection.on('connected', () => {
     console.log(` ${config.colors.green} Aplicação conectada ao banco de dados!`)
 });
 
+swaggerDocs(app); // documentation swagger
 
 module.exports = app;
