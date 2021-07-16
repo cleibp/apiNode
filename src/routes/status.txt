@@ -1,0 +1,12 @@
+ * 200 - ok
+ * 201 - created
+ * 202 - accepted
+ * 
+ * 400 - bad request
+ * 401 - Unauthorized autenticacao
+ * 403 - Forbiden autorizacao
+ * 404 - Not found
+ * 
+ * 500 - Internal server error
+ * 501 - Not implemented
+ * 503 - Service unavailable
