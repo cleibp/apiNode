@@ -55,7 +55,7 @@ router.route('/news').get(newsController.get);
  *              '401':
  *                  description: Erro ao criar uma notícia.
  */
-router.route('/news').post(newsController.add);
+router.route('/news').post(auth, newsController.add);
 
 /**
  * @swagger
