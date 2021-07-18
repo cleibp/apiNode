@@ -9,6 +9,9 @@ const auth = require('../middlewares/auth');
  *   get:
  *     summary: Rota Padrão
  *     description:  Rota Padrão
+ *     responses:
+ *      '200':
+ *          description: Retorna mensagem de boas vindas.
  */
 router.get('/', (req, res) => {
     res.json({ "message": "Bem vindo a rota padrão!" });
@@ -38,6 +41,8 @@ router.route('/news').get(newsController.get);
  * paths:
  *  /news:
  *      post:
+ *          security: 
+ *              - auth: []
  *          tags:
  *              - news
  *          summary: Salvar uma notícia
@@ -62,6 +67,8 @@ router.route('/news').post(auth, newsController.add);
  * paths:
  *  /news/{id}:
  *      get:
+ *          security: 
+ *              - auth: []
  *          tags:
  *              - news
  *          summary: Buscar notícia por id
@@ -86,6 +93,8 @@ router.route('/news/:id').get(auth, newsController.getById);
  * paths:
  *  /news/{id}:
  *      put:
+ *          security: 
+ *              - auth: []
  *          tags:
  *              - news
  *          summary: Atualizar a notícia
@@ -108,6 +117,8 @@ router.route('/news/:id').put(auth, newsController.update);
  * paths:
  *  /news/{id}:
  *      delete:
+ *          security: 
+ *              - auth: []
  *          tags:
  *              - news
  *          summary: Remover a notícia
@@ -118,6 +129,8 @@ router.route('/news/:id').put(auth, newsController.update);
  *             description: "Id da Notícia para remover"
  *             required: true
  *          responses:
+ *              '204':
+ *                  description: Notícia removida com sucesso.
  *              '400': 
  *                  description: Id informado invalido.
  *              '404':
@@ -127,6 +140,11 @@ router.route('/news/:id').delete(auth, newsController.del);
 
 /**
  * @swagger
+ * securityDefinitions:
+ *  auth:
+ *      type: "apiKey"
+ *      name: "auth"
+ *      in: "header"
  * definitions:
  *  News:
  *   type: "object"
