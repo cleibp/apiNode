@@ -1,7 +1,7 @@
 <h1 align="center"> 🚀 API REST NODE DE NOTÍCIAS </h1>
 
 ## ✍️ Descrição
-Exemplificação da sintaxe geral e básica da Linguagem Pascal
+API REST NODE DE NOTÍCIAS
 
 ## 📥 Clone/Baixe
 
