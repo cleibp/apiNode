@@ -10,7 +10,7 @@ API REST NODE DE NOTÍCIAS
     ### Clonando
 
     ```bash
-    git clone git@github.com:cleibp/basic-pascal.git
+    git clone git@github.com:cleibp/apiNode.git
     ```
 1. Download:
     ### Download Manual
