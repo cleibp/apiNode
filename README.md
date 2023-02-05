@@ -1,29 +1,22 @@
-# 📚 API REST NODE DE NOTÍCIAS
+<h1 align="center"> 🚀 API REST NODE DE NOTÍCIAS </h1>
 
-## 📖 Começando...
-```
-Para começar, você deve simplesmente clonar/baixar o repositório do projeto na sua máquina e instalar as dependências.
-```
+## ✍️ Descrição
+Exemplificação da sintaxe geral e básica da Linguagem Pascal
 
-## 🚀 Pre-Requisitos...
-```
-Antes de instalar as dependências no projeto, você precisa já ter instalado na sua máquina o NODE
-```
+## 📥 Clone/Baixe
 
-## 📝 Passo a passo...
-1. Clone/Baixe o projeto:
+1. Clone:
 
     ### Clonando
 
     ```bash
-    git clone https://github.com/cleibp/apiNode.git
+    git clone git@github.com:cleibp/basic-pascal.git
     ```
-
+1. Download:
     ### Download Manual
 
         1.  Download do repositório
         2.  Descompacte para o diretório desejado
-
 
 1. Após clonar/baixar o projeto entre na pasta.
 
@@ -76,4 +69,19 @@ Antes de instalar as dependências no projeto, você precisa já ter instalado n
     └── tools
         └── swaggerDocs.js
 ```
+
+## 👋🏽 DEMO
+
+
+
+## Contatos
+
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/cleibp)](https://github.com/cleibp)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/cleitonpaiva/)](https://www.linkedin.com/in/cleitonpaiva/)
+[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5516988368457&text=Ola!)](https://api.whatsapp.com/send?phone=5516988368457&text=Ola!)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cleibp@gmail.com)](mailto:cleibp@gmail.com)
+
+Feito com muito ❤️☕👨🏻‍💻 por Cleiton Paiva
+
+
 
